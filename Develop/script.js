@@ -46,30 +46,32 @@ function generatePassword() {
   lowerConfirm = confirm("Will this contain lowercase letters?");
   var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-  var output = [""];
+  // Adding to the array output using a while loop to add to array until the length of the array matches how long the user wants the password to be
+  var output = [];
 
   while (output.length < passwordLength) {
 
-    if (numbConfirm === true) {
+    if (numbConfirm === true && output.length < passwordLength) {
       output.push(Numbers[Math.floor(Math.random() * Numbers.length)]);
     }
 
-    if (charConfirm === true) {
+    if (charConfirm === true && output.length < passwordLength) {
       output.push(characters[Math.floor(Math.random() * characters.length)]);
     }
 
-    if (upperConfirm === true) {
+    if (upperConfirm === true && output.length < passwordLength) {
       output.push(uppercase[Math.floor(Math.random() * uppercase.length)]);
     }
 
-    if (lowerConfirm === true) {
+    if (lowerConfirm === true && output.length < passwordLength) {
       output.push(lowercase[Math.floor(Math.random() * lowercase.length)]);
     }
   }
-var password = output.toString();
-console.log(password);
+  
+  // Turning the output array into a string to become the password
+  var passwordOutput = output.join("");
+  console.log(passwordOutput);
 }
-
 
 
 // Write password to the #password input
