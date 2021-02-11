@@ -1,14 +1,29 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-generateBtn.addEventListener("click", Prompt);
+
+
+
+// Write password to the #password input
+function writePassword(word) {
+  // var password = generatePassword(passwordOutput);
+
+  var passwordText = document.querySelector("#password");
+ 
+
+  passwordText.value = word;
+
+};
 
 function Prompt () {
+  var password;
   var passwordPrompt = prompt("Would you like to create a password? Enter yes or no.");
   passwordPrompt = passwordPrompt.toLowerCase();
   if (passwordPrompt === "yes") {
-    generatePassword();
+   password =  generatePassword();
   }
+
+  writePassword(password)
 }
 
 function generatePassword() {
@@ -71,20 +86,12 @@ function generatePassword() {
   // Turning the output array into a string to become the password
   var passwordOutput = output.join("");
   console.log(passwordOutput);
-}
 
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+  return passwordOutput;
 
 }
 
-console.log(passwordText);
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+generateBtn.addEventListener("click", Prompt);
+
