@@ -1,4 +1,5 @@
-# PasswordGenerator
+# Password Generator
+**Project Description** </br>
 Creating a Password Generator using JavaScript that enables employees to generate random passwords based on criteria that they’ve selected.
 
 ## User Story
@@ -85,9 +86,23 @@ The passwordText variable is then set equal to the password itself generated fro
 
 This is how the actual password we generated is able to be shown on the webpage after it is created. 
 
+</br>
+
 ## Credits
 
+CSS Tricks - [Select Random Item from an Array](https://css-tricks.com/snippets/javascript/select-random-item-array/ "Array Randomize")
 
+W3Schools - [JavaScript Popup Boxes](https://www.w3schools.com/js/js_popup.asp)
+
+MDN Web Docs - [Document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+
+W3Shools - [JavaScript DOM Event Listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+
+MDN Web Docs - [parseInt() - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+
+W3Schools - [JavaScript Array Reference](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+
+</br>
 
 ## Links
 
