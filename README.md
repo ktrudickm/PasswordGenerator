@@ -75,6 +75,17 @@ After the while loop is done based on if the output length is less than the leng
 
 ![Turning the output array into a string and returning this string](./Assets/passwordOutput.png)
 
+Now, if we look back up to the Prompt function, we see that the variable password is set equal to the generatePassword function. So now, the password variable points to the string returned by the generate Password function. And if looking at the Prompt photo, we can see that within the prompt function at the very end (outside of the if statement), writePassword is called and it contains the password. So now, the write Password function will run. This is where the querySelector is used to reference the selector of the password ID in the html and sets it equal to the variable passwordText: 
+
+![PasswordID in HTML](./Assets/passwordID.png)
+
+The passwordText variable is then set equal to the password itself generated from the generatePassword function, and passed on from the Prompt function:
+
+![Query Selector in writePassword function](./Assets/writePassword.png)
+
+This is how the actual password we generated is able to be shown on the webpage after it is created. 
+
+## Credits
 
 
 
