@@ -15,6 +15,9 @@ function writePassword(word) {
 
 };
 
+// Function prompts user if they would like to create a password
+// If user enters "yes", generatePassword function is initiated and assigns its return variable to password.
+// The writePassword function is then called, and passes into it the password from generatePassword
 function Prompt () {
   var password;
   var passwordPrompt = prompt("Would you like to create a password? Enter yes or no.");
@@ -26,6 +29,8 @@ function Prompt () {
   writePassword(password)
 }
 
+
+// Generate the actual password based on the user's specifications
 function generatePassword() {
 
   var passLength = false;
@@ -92,6 +97,6 @@ function generatePassword() {
 }
 
 
-
+// Calls Prompt function when the "generate" button is clicked.
 generateBtn.addEventListener("click", Prompt);
 
