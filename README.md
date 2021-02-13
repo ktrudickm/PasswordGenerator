@@ -108,4 +108,4 @@ W3Schools - [JavaScript Array Reference](https://www.w3schools.com/jsref/jsref_o
 
 GitHub Repository - [Generator Repository](https://github.com/ktrudickm/PasswordGenerator "Generator Repository")
 
-Deployed Project - [Deployed Application]( "Deployed Application")
+Deployed Project - [Deployed Application](https://ktrudickm.github.io/PasswordGenerator/ "Deployed Application")
